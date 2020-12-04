@@ -27,6 +27,8 @@ def voegtoe():
         print(lijst)
         if nog == "y":
             voegtoe()
+    except Exception as e:
+        print(e)
 
 
 def main():
