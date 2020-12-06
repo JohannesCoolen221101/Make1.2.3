@@ -10,17 +10,18 @@ __status__ = "development"
 
 
 class liedje:
-    def __init__(self,tekst):
+    def __init__(self,tekst):    # initialiseer de classe met een tekst
         self.tekst = tekst
+
     def zingen(self):
-        for woord in self.tekst:
+        for woord in self.tekst:  # lees elk woord af op een apparte lijn
             print(woord)
 
 
 
 
 def main():
-    tekst = ["Happy","Birthday","to","You","Happy","Birthday","to","You","Happy","Birthday","Dear","(name)","Happy","Birthday","to","You."]
+    tekst = ["Happy", "Birthday", "to", "You", "Happy", "Birthday", "to", "You", "Happy", "Birthday", "Dear", "(name)", "Happy", "Birthday", "to", "You."]
     happy_birthday = liedje(tekst)
     happy_birthday.zingen()
 

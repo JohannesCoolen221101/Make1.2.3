@@ -13,9 +13,9 @@ def main():
     stop = ""
     lijst = []
     while stop != "s":
-        lijst.append(int(input("geef de sensor waarde")))
+        lijst.append(int(input("geef de sensor waarde")))   # voeg de ingegeven waarde toe aan de lijst
         stop = input("druk op s als je wil stoppen")
-    gemiddelde = str(sum(lijst)/len(lijst))
+    gemiddelde = str(sum(lijst)/len(lijst))                 # bereken het gemiddelde van de lijst
     print("het gemiddelde is: "+gemiddelde)
 
 

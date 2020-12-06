@@ -14,9 +14,9 @@ __status__ = "development"
 def genereerwachtwoord(lengte, tekens):
     wachtwoord = ""
     if tekens:
-        password_characters = string.ascii_letters + string.digits + string.punctuation
+        password_characters = string.ascii_letters + string.digits + string.punctuation     # verzamel alle toegelaten karakters in een string
         for i in range(lengte):
-            wachtwoord += random.choice(password_characters)
+            wachtwoord += random.choice(password_characters)                                # kies een willekeurige karakter uit de string
         return wachtwoord
     else:
         password_characters = string.ascii_letters + string.digits
